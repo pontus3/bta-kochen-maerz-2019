@@ -1,24 +1,72 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
-  font-family: Helvetica, Arial, sans-serif;background-color: lightblue;
+body {
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   line-height: 1.4;
   color: #000;
 }
 
-ul{
-  padding: 40px;
+ul {
+  padding: 0;
   list-style-type: none;
-
 }
 
-nav a{color: black; text-decoration: none;}
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.7s ease;
+}
 
-#lieblingslink {
-  color: red;
-}  /*ids in html werden in css zu einem #*/
+nav a:hover {
+  color: lightgrey;
+}
 
-.container{background: lightgreen;}
+#navigation {
+  display: none;
+}
+
+#navigation.show {
+  display: block;
+}
+
+#burger {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#hero{
+  background-image: url(../img/intro.jpg); height: 100vh;
+}
+/*ids in html werden in css zu einem #*/
+@media (min-width:1024px) {
+  #burger {
+    display: none
+  }
+
+  #navigation {
+    display: block;
+    font-size: large;
+  }
+
+  nav li {
+    float: left;
+    margin-left: 30px
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
