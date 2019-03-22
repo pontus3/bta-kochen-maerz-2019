@@ -66,10 +66,15 @@ nav a:hover {
 
 .card p a {
   color: #828282;
+  padding : 16px
+
 }
 
 .card {
   text-align: center;
+  border-radius: 4px;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
 }
 
 .hero-box {
@@ -102,6 +107,30 @@ nav a:hover {
   background: #374A67
 }
 
+ .card .button-blau {
+  border-radius: 4px;
+  background: #374A67;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.6);
+  border: 1px solid #374A67;
+  transition: 1.0s all ease;
+  margin-top: 20px;
+  display: inline-block;
+  display: block;
+  margin: 1rem;
+
+
+}
+
+.button-blau:hover {
+  color: #374A67;
+  background: white;
+
+}
 
 .hero-box p {
   font-size: 20px;
