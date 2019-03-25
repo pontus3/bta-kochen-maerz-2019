@@ -25,14 +25,14 @@
 }
 
 .icon-youtube a:before {
-  content: "\e900";
+  content: "\e900"; font-size: 50px;
 }
 
 .icon-instagram a:before {
-  content: "\e901";
+  content: "\e901"; font-size: 50px;
 }
 .icon-facebook a:before {
-  content: "\e902";
+  content: "\e902"; font-size: 50px;
 }
 .icon-search a:before {
   content: "\e903";
